@@ -48,7 +48,6 @@ The project contain two pages:
 `React-Select`
 `Prop-Types`
 
-The application would start at http://localhost:3000 by default.
 
 
 ## Data Source
