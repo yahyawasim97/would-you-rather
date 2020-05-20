@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Would You Rather Project
 
-## Available Scripts
+This app is created using create-react-app.
 
-In the project directory, you can run:
+- Would you rather is a game which permits clients to pick one of two given alternatives in vintage heads or tails design.
+- User can also create new polls themselves or for others to answer.
+- Every Question created / answered earns users a points.
+- The Leadership page tends to show all the results of sorting in order of points.
 
-### `yarn start`
+## Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get started developing right away:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Clone the application:
+`$ git clone https://github.com/yahyawasim97/would-you-rather.git`
 
-### `yarn test`
+2. Install the dependencies:
+`$ npm install`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the application:
+`$ npm start`
 
-### `yarn build`
+The application would start at http://localhost:3000 by default.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Functionality
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The project contain two pages:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Login: 
+    Provide user authentication via a dropdown.
+    
+2. Dashboard:
+    Dashboard constitutes the home page of the application. It links all pages together as well as shows listing.
 
-### `yarn eject`
+3. Create Question:
+    You can create new question via this view that can be answered by different users.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Leaderboard:
+    This view summaries the results of the users
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`Redux`
+`React-Redux`
+`Redux-Thunk`
+`Bootstrap`
+`Reactstrap`
+`React-Select`
+`Prop-Types`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The application would start at http://localhost:3000 by default.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Data Source
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_DATA.js is used as a datasource for fetching, updating, creating records. It has a list of methods and other other details regarding the entities.
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Create React App
 
-### Analyzing the Bundle Size
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Contributing
+The main purpose of this repository is to continue learning React, improving the way it is written.
