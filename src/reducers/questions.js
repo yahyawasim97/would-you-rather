@@ -20,14 +20,14 @@ const questions = (state = null, action) => {
       };
 
     case ADD_QUESTION_ANSWER:
-      const { authUser, qid, answer } = action;
+      const { auth, qid, answer } = action;
       return {
         ...state,
         [qid]: {
           ...state[qid],
           [answer]: {
             ...state[qid][answer],
-            votes: state[qid][answer].votes.concat(authUser),
+            votes: state[qid][answer].votes.concat(auth),
           },
         },
       };

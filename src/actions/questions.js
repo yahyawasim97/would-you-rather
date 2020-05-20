@@ -28,10 +28,10 @@ export const addQuestion = (question) => {
   };
 };
 
-export const addQuestionAnswer = (authUser, qid, answer) => {
+export const addQuestionAnswer = (auth, qid, answer) => {
   return {
     type: ADD_QUESTION_ANSWER,
-    authUser,
+    auth,
     qid,
     answer,
   };

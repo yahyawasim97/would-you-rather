@@ -20,21 +20,21 @@ export function addUserQuestion({ id, author }) {
     author,
   };
 }
-function addUserAnswer(authUser, qid, answer) {
+function addUserAnswer(auth, qid, answer) {
   return {
     type: ADD_USER_ANSWER,
-    authUser,
+    auth,
     qid,
     answer,
   };
 }
 
-export function handleSaveQuestionAnswer(authUser, qid, answer) {
+export function handleSaveQuestionAnswer(auth, qid, answer) {
   return (dispatch) => {
-    dispatch(addUserAnswer(authUser, qid, answer));
-    dispatch(addQuestionAnswer(authUser, qid, answer));
+    dispatch(addUserAnswer(auth, qid, answer));
+    dispatch(addQuestionAnswer(auth, qid, answer));
 
-    return saveQuestionAnswer(authUser, qid, answer).catch((e) => {
+    return saveQuestionAnswer(auth, qid, answer).catch((e) => {
       console.log(e);
     });
   };
